@@ -21,7 +21,7 @@ class Conan(ConanFile):
     requires        = ["gtest/cci.20210126"]
     packagesPath    = "/home/sylwester/.conan/data"
     downloadsPath   = "/home/sylwester/.conan/download"
-    packages        = []
+    packages        = ["Utils/1.1@ssitkowx/stable"]
 
     def source (self):   
         conanPackages.install (self, self.downloadsPath, self.repoUrl, self.packages)
