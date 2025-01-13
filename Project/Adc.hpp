@@ -44,8 +44,8 @@ class Adc
         Adc () = default;
         ~Adc () = default;
 
-        void     Start (void)                    { return derivedType.Start ();         }
-        void     Stop  (void)                    { return derivedType.Stop  ();         }
+        void     Start (void)                    { derivedType.Start ();                }
+        void     Stop  (void)                    { derivedType.Stop  ();                }
         uint32_t Read  (const EChannel vChannel) { return derivedType.Read  (vChannel); }
 };
 
